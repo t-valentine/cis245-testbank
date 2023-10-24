@@ -5,3 +5,4 @@ This is the group project for CIS 245.
 ## Authors
 
 Tobi W.
+Daniel T.

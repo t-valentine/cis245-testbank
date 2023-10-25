@@ -8,6 +8,8 @@ packages = [{include = "cis245_testbank"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+black = "^23.10.1"
+pylint = "^3.0.2"
 
 
 [tool.poetry.group.dev.dependencies]

@@ -6,7 +6,11 @@ This is the group project for CIS 245.
 
 - Tobi W.
 - Daniel T.
+<<<<<<< Updated upstream
 - Crenguta I. (GitHub username: crengutaibrian) - Database
+=======
+- Bertha I.
+>>>>>>> Stashed changes
 
 
 

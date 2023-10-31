@@ -6,6 +6,7 @@ This is the group project for CIS 245.
 
 - Tobi W.
 - Daniel T.
+- Crenguta I. (GitHub username: crengutaibrian) - Database
 
 
 

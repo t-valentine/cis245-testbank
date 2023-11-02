@@ -1,5 +1,3 @@
-# !/usr/bin/env python3
-
 from tkinter import *
 import regex as re
 import mysql.connector

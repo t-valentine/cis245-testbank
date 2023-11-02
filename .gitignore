@@ -1,1 +1,4 @@
-# we will include files/folders with sensitive data that git should ignore.
+# we will include files/folders with sensitive data or any other folder/file that would be irrelevant, that git should ignore.
+
+# Ignoring __pycache__ files
+__pycache__/

@@ -7,7 +7,7 @@ This is the group project for CIS 245.
 - Tobi W. (Github username: t-valentine)
 - Daniel T. (Github username: NiteToad)
 - Crenguta I. (GitHub username: crengutaibrian) - Database
-- Bertha I.
+- Bertha I. (Github username:Bertelib)
 
 ## Poetry
 

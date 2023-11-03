@@ -15,11 +15,18 @@ Poetry is a python packaging and dependency management.
 
 **Set up**:
 
-- First clone repo in your preferred directory, for example:
+- First you need to install poetry:
+  - if you have windows just paste the following into your powershell terminal:
+    - `(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -`
+  - if you have linux, macOS, WSL:
+    - `curl -sSL https://install.python-poetry.org | python3 -`
+  - after installing please add poetry to your PATH via edit environment variables on windows, for example this is mine:
+    - `C:\Users\Dtorr\AppData\Roaming\Python\Scripts`
+- Now you clone repo in your preferred directory, for example:
   - `git clone https://github.com/t-valentine/cis245-testbank.git $HOME\dev\school\cis245\project\cis245-testbank\` `
-- Next make sure you are in your repo directory, for example:
+- Then change into your repo directory, for example:
   - `cd $HOME\dev\school\cis245\project\cis245-testbank\`
-- One inside your repository, in the terminal you type:
+- Once inside your repository directory, in the terminal you can type:
   - `poetry install`
   - This will install all the libraries/modules that are in the pyproject.toml file
 - After the installation is complete to activate the poetry environment, in your terminal type:

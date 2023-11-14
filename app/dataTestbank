@@ -1,0 +1,37 @@
+import json
+
+def test_bank():
+    test_bank=[]
+print("\nCIS245 TestBank:")
+
+# Specify the path to your JSON file
+json_file_path = 'test_bank.json'
+
+# Read the JSON file
+with open(json_file_path, 'r') as json_file:
+    test_bank_data = json.load(json_file)
+
+# Display the questions already generated 
+for index, question_data in enumerate(test_bank_data.get("test_bank", []), start=1):
+    
+# Use get method with a default value to handle the absence of 'question' key
+    question_text = question_data.get('question', 'Question not available')
+    print(f"Question {index}: {question_text}")
+    print(f"Subject: {question_data.get('subject', 'N/A')}")
+    print(f"Level: {question_data.get('level', 'N/A')}")
+    print(f"Question Type: {question_data.get('question type', 'N/A')}")
+    
+    options = question_data.get('options', [])
+    print("Options:")
+    for option_index, option in enumerate(options, start=1):
+        print(f"  {option_index}. {option}")
+
+    correct_answer = question_data.get('correctAnswer', 'N/A')
+    print(f"Correct Answer: {correct_answer}\n")
+
+
+def display_test_bank(test_bank):
+    
+   
+    if __name__ == "__main__":
+        display_test_bank(test_bank)

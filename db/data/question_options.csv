@@ -1,0 +1,183 @@
+id,question_id,description
+1,1,A) True
+2,1,B) False
+3,2,A) True
+4,2,B) False
+5,3,A) Paleozoic
+6,3,B) Mesozoic
+7,3,C) Cenozoic
+8,3,D) Precambrian
+9,4,A) Earthquakes
+10,4,B) Volcanoes
+11,4,C) Glaciers
+12,4,D) Deserts
+13,5,lithosphere
+14,6,A) True
+15,6,B) False
+16,7,A) True
+17,7,B) False
+18,8,A) Java
+19,8,B) C++
+20,8,C) JavaScript
+21,8,D) MATLAB
+22,9,A) Ransomware
+23,9,B) Malware
+24,9,C) Social Engineering
+25,9,D) Data Backup
+26,10,User
+27,11,A) True
+28,11,B) False
+29,12,A) True
+30,12,B) False
+31,13,A) 3.14
+32,13,B) 3.16
+33,13,C) 3.18
+34,13,D) 3.20
+35,14,A) 1
+36,14,B) 2
+37,14,C) 4
+38,14,D) 7
+39,15,area
+40,16,A) Igneous
+41,16,B) Metamorphic
+42,16,C) Sedimentary
+43,16,D) Tectonic
+44,17,A) Andes
+45,17,B) Himalayas
+46,17,C) Alps
+47,18,Mesa
+48,19,A) True
+49,19,B) False
+50,20,A) Paleontology
+51,20,B) Petrology
+52,20,C) Seismology
+53,20,D) Volcanology
+54,21,A) Infrastructure as a Service (IaaS)
+55,21,B) Software as a Services (SaaS)
+56,21,C) Local Area Network (LAN)
+57,21,D) Platform as a Service (PaaS)
+58,22,A) Data encryption 
+59,22,B) Regular data backup 
+60,22,C) Password rotation 
+61,23,Enterprise Resource Planning
+62,24,A) Encryption
+63,24,B) Security
+64,24,C) Firewall
+65,25,A) Stores data in an unstructured format 
+66,25,B) Requires a fixed schema 
+67,25,C) Performs complex mathematical calculations 
+68,26,A) 4
+69,26,B) 10
+70,26,C) 6
+71,27,A) 36
+72,27,B) 41
+73,27,C) 48
+74,27,D) 50
+75,28,A) True
+76,28,B) False
+77,29,A) 2
+78,29,B) 12
+79,29,C) 18
+80,30,2
+81,31,A) Crust
+82,31,B) Mantle
+83,31,C) Core
+84,32,A) Erosion
+85,32,B) Weathering
+86,32,C) Sedimentation
+87,33,A) Pangae
+88,33,B) Laurasia
+89,33,C) Rodinia
+90,34,A) Richter scale
+91,34,B) Mercalli scale
+92,34,C) Beaufort scale
+93,35,A) Magma
+94,35,B) Igneous rock
+95,35,C) Volcanic rock
+96,36,A) Running applications
+97,36,B) Managing hardware resources
+98,36,C) Creating databases
+99,36,D) Designing user interfaces
+100,37,A) Amazon Web Services (AWS)
+101,37,B) Google Cloud
+102,37,C) Microsoft Azure
+103,38,A) Star
+104,38,B) Mesh
+105,38,C) Line
+106,39,antivirus
+107,40,objects
+108,41,A) True
+109,41,B) False
+110,42,A) True
+111,42,B) False
+112,43,A) 16
+113,43,B) 54
+114,43,C) 63
+115,44,A) 13
+116,44,B) 5
+117,44,C) 8
+118,45,x = 4
+119,46,A) Variable
+120,46,B) Function
+121,46,C) Class
+122,47,composition of functions
+123,48,A) x = 2
+124,48,B) x = 3
+125,48,C) x = 5
+126,48,D) x = 9
+127,49,A) Coefficient
+128,49,B) Range
+129,49,C) Domain
+130,50,A) $20
+131,50,B) $150
+132,50,C) $170
+133,51,A) True
+134,51,B) False
+135,52,A) 15
+136,52,B) 8
+137,52,C) 20
+138,52,D) 5
+139,53,A) Fibonacci
+140,53,B) Laplace
+141,53,C) Euler
+142,54,A) n * m matrix with zeros on the main diagonal
+143,54,B) 3 rows and 4 columns
+144,54,C) zeros on all column and rows
+145,55,A) x = mb + y
+146,55,B) x + y = mb
+147,55,C) y = mx + b
+148,55,D) x + b = m
+149,56,A) Scientific Method
+150,56,B) Mineral Procedure
+151,56,C) Modern Geology
+152,57,the crust
+153,58,A) True
+154,58,B) False
+155,59,sedimentary
+156,60,A) True
+157,60,B) False
+158,61,A) True
+159,61,B) False
+160,62,Learning Management System (LMS)
+161,63,A) Analysis
+162,63,B) Software Development
+163,63,C) Integration
+164,63,D) Modern Software
+165,64,A) True
+166,64,B) False
+167,65,A) True
+168,65,B) False
+169,66,A) 32
+170,66,B) 16
+171,66,C) 64
+172,66,D) 8
+173,67,A) True
+174,67,B) False
+175,68,A) 32
+176,68,B) 41
+177,68,C) 4
+178,69,A) Hyper Text Markup Language
+179,69,B) Hyper Text Machine Language
+180,69,C) Hyper Tech Math Learning
+181,70,A) True
+182,70,B) False

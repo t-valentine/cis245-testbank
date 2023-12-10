@@ -2,3 +2,6 @@
 
 # Ignoring __pycache__ files
 __pycache__/
+
+# Ignoring .env -- Where I will be storing my database login info
+.env 

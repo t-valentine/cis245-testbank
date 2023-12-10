@@ -1,0 +1,57 @@
+import json
+
+def load_existing_questionnaire(filename='questionnaire.json'):
+    try:
+        with open(filename, 'r') as file:
+            existing_questionnaire = json.load(file)
+        return existing_questionnaire
+    except FileNotFoundError:
+        return []
+
+def create_questionnaire(existing_questionnaire=[]):
+    questionnaire = existing_questionnaire
+
+    print("Edit Exam/Add Questions!")
+
+    while True:
+        subject = input("\nEnter the subject of the question (or type 'done' to finish): ")
+        if subject.lower() == 'done':
+            break
+
+        level = input("Enter the difficulty of the question (Easy/Medium/Hard): ")
+        question_type = input("Enter the question type (e.g., multiple-choice, true/false/Fill in the blank): ")
+
+        question = input("Enter a question: ")
+        options = input("Enter options for the question (letter and comma-separated, or leave blank for open-ended): ").split(',')
+        correct_answer = input("Enter the correct answer (letter and answer): ").strip()
+
+        # Add the question, options, subject, level, question type, and correct answer to the questionnaire
+        questionnaire.append({
+            "subject": subject,
+            "level": level,
+            "question_type": question_type,
+            "question": question,
+            "options": [opt.strip() for opt in options],
+            "correct_answer": correct_answer.upper()  # Store the correct answer in uppercase
+        })
+
+    return questionnaire
+
+def save_questionnaire_to_file(questionnaire, filename='questionnaire.json'):
+    with open(filename, 'w') as file:
+        json.dump(questionnaire, file, indent=2)
+    print(f"\nQuestionnaire saved to {filename}")
+
+def display_questionnaire(questionnaire):
+    print("\nGenerate Exam:")
+    for index, question_data in enumerate(questionnaire, start=1):
+        print(f"\nQuestion {index} ({question_data['subject']} - Level {question_data['level']} - Question Type {question_data['question_type']}): {question_data['question']}")
+        if question_data['options']:
+            print(f"Options: {', '.join(question_data['options'])}")
+        print(f"Correct Answer: {question_data['correct_answer']}")
+
+if __name__ == "__main__":
+    existing_questionnaire = load_existing_questionnaire()
+    new_questionnaire = create_questionnaire(existing_questionnaire)
+    save_questionnaire_to_file(new_questionnaire)
+    display_questionnaire(new_questionnaire)

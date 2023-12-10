@@ -82,7 +82,7 @@ subject_input.grid(row=1, column=1, padx=10, pady=10)
 difficulty_input.grid(row=2, column=1, padx=10, pady=10)
 questionnumber_input.grid(row=3, column=1, padx=5, pady=5)
 format_input.grid(row=4, column=1, padx=10, pady=10)
-generateExam_button.grid(row=5, column=0, padx=10, pady=10)
+generateExam_button.grid(row=5, column=0, columnspan=2, padx=10, pady=10)
 
 frame.pack()
 

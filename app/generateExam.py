@@ -1,6 +1,16 @@
 from tkinter import *
 import tkinter.messagebox as msg
 
+# Switch to exam export page
+def switch_to_exportExam():
+    ws.destroy()
+    # this should have the API call
+    import exportExam
+
+def logout():
+    ws.destroy()
+    import login
+
 subject = [
 "Geology",
 "Computer Information Systems",
@@ -43,7 +53,6 @@ Label(frame, text="Difficulty:", padx=5, pady=5).grid(row=2, column=0, sticky=W)
 Label(frame, text="Number of Questions:", padx=5, pady=5).grid(row=3, column=0, sticky=W)
 Label(frame, text="Question Formats:", padx=5, pady=5).grid(row=4, column=0, sticky=W)
 
-
 # Creating Dropdowns
 subjects = StringVar(ws)
 subjects.set(subject[0])
@@ -59,12 +68,12 @@ for format in question_format:
 questionnumber_input = Entry(frame)
 
 # Creating Generate Exam button
-generateExam_button = Button(frame, text="Generate Exam", command=button_clicked, cursor="mouse")
-generateExam_button.bind("<Return>", lambda event: button_clicked())
+generateExam_button = Button(frame, text="Generate Exam", command=switch_to_exportExam, cursor="mouse")
+generateExam_button.bind("<Return>", lambda event: switch_to_exportExam())
 
 # Creating Log Out button
-logout_button = Button(frame, text="Log Out", command=button_clicked, cursor="mouse")
-logout_button.bind("<Return>", lambda event: button_clicked())
+logout_button = Button(frame, text="Log Out", command=logout, cursor="mouse")
+logout_button.bind("<Return>", lambda event: logout())
 
 
 # Placement of text boxes and buttons

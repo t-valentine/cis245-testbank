@@ -1,4 +1,4 @@
-INSERT INTO question_answers (id, question_id, option_id) VALUES
+INSERT INTO question_answers (answer_id, question_id, option_id) VALUES
 (1, 1, 1),
 (2, 2, 3),
 (3, 3, 6),

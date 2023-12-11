@@ -1,4 +1,4 @@
-INSERT INTO question_options (id, question_id, description) VALUES
+INSERT INTO question_options (option_id, question_id, description) VALUES
 (1, 1, 'A) True'),
 (2, 1, 'B) False'),
 (3, 2, 'A) True'),

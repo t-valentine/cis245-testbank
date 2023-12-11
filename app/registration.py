@@ -135,8 +135,8 @@ def submit():
 try:
     conn = mysql.connector.connect(
         host="localhost",  # hostname
-        user="Torres",  # username
-        password="Test123!",  # password
+        user="<user>",  # username
+        password="<password>",  # password
         database="testbank",  # database name
     )  # please note the information above will need to be changed according the database in use
 

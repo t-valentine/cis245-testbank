@@ -58,3 +58,19 @@ Poetry is a python packaging and dependency management.
   - `poetry run pylint app/registration.py`
 
 For more help with **[Poetry](https://python-poetry.org/docs/)**
+
+## MySQL Database for development
+
+The scripts (reset_schema.ps1 & reset_schema.sh) are designed to reset the database schema and insert our mock data for the project.
+The scripts run SQL scripts to drop existing tables, create new ones, and then populate them with our mock data.
+
+### Running the script
+
+1. **Open Terminal:** This should be either Bash, zsh, Git Bash, or Powershell.
+2. **Navigate to your Directory:** `cd cis245-testbank`
+3. **Execute the Script:** 
+    - If you are on Linux/MacOS or using Git Bash, your command will be `db/reset_schema.sh` 
+    - If you are using Windows Powershell your command will be `db/reset_schema.ps1`
+4. **Enter your MySQL Password:** After running the script you will be prompted to enter your password 
+
+

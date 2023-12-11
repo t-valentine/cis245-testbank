@@ -5,11 +5,13 @@ from argon2 import PasswordHasher
 
 password_hasher = PasswordHasher()
 
+
 def display_error(message):
     """
     This function will help display error messages
     """
     msg.showerror("Error", message)
+
 
 def validate_login(email, password):
     """
@@ -25,7 +27,7 @@ def validate_login(email, password):
             database="testbank",  # database name
         )  # please note the information above will need to be changed according the database in use
         cursor = conn.cursor()
-        user_email = (email, )
+        user_email = (email,)
         query = "SELECT password FROM users WHERE email = %s"
         cursor.execute(query, user_email)
         user = cursor.fetchone()
@@ -45,6 +47,7 @@ def validate_login(email, password):
         conn.close()
     return False
 
+
 def submit():
     """
     This function will submit the login form,
@@ -61,12 +64,19 @@ def submit():
     else:
         display_error("Failed to login")
 
+
 def switch_to_home_page():
     """
     This function will switch take the user to the Home page and close the login window.
     """
     ws.destroy()
+<<<<<<< HEAD
     import generateExam
+=======
+    # TODO: import home/landing page
+    # home/landing page
+>>>>>>> auth_tests
+
 
 def clear_form():
     """
@@ -81,8 +91,10 @@ def go_to_register():
     This funciton will allow the user to go to the registration page and destroy the login window.
     """
     import registration
+
     ws.destroy()
     registration
+
 
 # Initiate GUI
 ws = Tk()

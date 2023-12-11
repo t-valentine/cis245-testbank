@@ -13,6 +13,7 @@ pylint = "^3.0.2"
 regex = "^2023.10.3"
 mysql-connector-python = "^8.2.0"
 argon2-cffi = "^23.1.0"
+pytest-mock = "^3.12.0"
 
 
 [tool.poetry.group.dev.dependencies]

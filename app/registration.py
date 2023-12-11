@@ -4,19 +4,23 @@ import mysql.connector
 import argon2
 import tkinter.messagebox as msg
 
+
 def switch_to_login():
     """
     This function destroys and then switches to the login screen.
     """
     import login
+
     ws.destroy()
     login
+
 
 def display_error(message):
     """
     This function will help display error messages
     """
     msg.showerror("Error", message)
+
 
 def clear_form():
     """
@@ -25,6 +29,7 @@ def clear_form():
     register_email.delete(0, END)
     confirm_email.delete(0, END)
     register_password.delete(0, END)
+
 
 def email_validator(email, email2):
     """
@@ -39,6 +44,7 @@ def email_validator(email, email2):
             return "Invalid email format"
     else:
         return "Emails do not match"
+
 
 def password_validator(password):
     """
@@ -60,19 +66,21 @@ def password_validator(password):
     else:
         return "Password must be at least 8 characters."
 
+
 def user_exists(email):
     """
     Checks if a user with the given email is already existing in the database.
     """
     try:
         query = "SELECT COUNT(*) FROM users WHERE email = %s"
-        cursor.execute(query, (email, ))
+        cursor.execute(query, (email,))
         result = cursor.fetchone()[0]
         return result > 0
     except mysql.connector.Error as err:
         print(f"Database error: {err}")
         conn.rollback()
         return False
+
 
 def insert_user(email, password):
     """
@@ -91,6 +99,7 @@ def insert_user(email, password):
         print(f"Database error: {err}")
         conn.rollback()
         return False
+
 
 def submit():
     """
@@ -120,13 +129,14 @@ def submit():
         else:
             display_error("Failed to register")
             return False
-        
+
+
 # Database Integration
 try:
     conn = mysql.connector.connect(
         host="localhost",  # hostname
-        user="<user>",  # username
-        password="<password>",  # password
+        user="Torres",  # username
+        password="Test123!",  # password
         database="testbank",  # database name
     )  # please note the information above will need to be changed according the database in use
 

@@ -68,9 +68,10 @@ The scripts run SQL scripts to drop existing tables, create new ones, and then p
 
 1. **Open Terminal:** This should be either Bash, zsh, Git Bash, or Powershell.
 2. **Navigate to your Directory:** `cd cis245-testbank`
-3. **Execute the Script:** 
+3. **Edit Script:** Enter your own Username, Database name (testbank is expected), and hostname (localhost is expected).
+4. **Execute the Script:** 
     - If you are on Linux/MacOS or using Git Bash, your command will be `db/reset_schema.sh` 
     - If you are using Windows Powershell your command will be `db/reset_schema.ps1`
-4. **Enter your MySQL Password:** After running the script you will be prompted to enter your password 
+5. **Enter your MySQL Password:** After running the script you will be prompted to enter your password 
 
 

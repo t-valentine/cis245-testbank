@@ -9,7 +9,7 @@ This is the group project for CIS 245.
 - Crenguta I. (GitHub username: crengutaibrian) - Database
 - Bertha I. (Github username:Bertelib)
 - Lakhdar D. (username: ldehbi)
-- John S .(username:Wozoht07) 
+- John S .(username:Wozoht07) - Database Contributor
 
 ## Poetry
 
